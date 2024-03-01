@@ -17,10 +17,14 @@
             height: 350px;
             margin: auto;
             margin-top: 100px;
+            box-shadow: 2px 3px 6px gray;
 
         }
         .button:hover{
             transform: scale(1.1);
+        }
+        .input:hover{
+            background-color: lightgray;
         }
 
     </style>
@@ -28,13 +32,20 @@
 <body>
     <div>
         <h1>Registration Page</h1>
-        <input type="text" placeholder="Username"><br><br>
-        <input type="password" placeholder="Password"><br><br>
-        <input type="password" placeholder="Confirm Password"><br><br>
-        <input type="text" placeholder="First Name"><br><br>
-        <input type="text" placeholder="Last Name"><br><br>
-        <button class="button">Cancle</button>
-        <button class="button">Register</button>
+        <input type="text" placeholder="Username" class="input"><br><br>
+        <input type="password" placeholder="Password" class="input"><br><br>
+        <input type="password" placeholder="Confirm Password" class="input"><br><br>
+        <input type="text" placeholder="First Name"class="input"><br><br>
+        <input type="text" placeholder="Last Name" class="input"><br><br>
+        <a href="index.html"><button class="button">Cancle</button></a>
+        <a href="index.html"><button class="button" id="Register">Register</button></a>
     </div>
 </body>
+<script>
+        let Register = document.querySelector("#Register")
+    Register.onclick = function () {
+        alert("Registered.");
+    }
+
+</script>
 </html>
