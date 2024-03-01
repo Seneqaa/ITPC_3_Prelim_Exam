@@ -22,6 +22,9 @@
         .button:hover{
             transform: scale(1.1);
         }
+        .input:hover{
+            background-color: lightgray;
+        }
         
 
     </style>
@@ -30,12 +33,18 @@
 
     <div style="text-align: center;" id="divLog">
         <h1>Login Page</h1>
-        <input type="text" placeholder="Username"><br><br>
-        <input type="password" placeholder="Password"><br><br>
-        <button class="button">Login</button>
-        <button class="button">Register</button>
+        <input type="text" placeholder="Username" class="input"><br><br>
+        <input type="password" placeholder="Password" class="input"><br><br>
+        <button class="button" id="login">Login</button >
+        <a href="register.html"><button class="button">Register</button></a>
         
     </div>
     
 </body>
+<script>
+    let login = document.querySelector("#login")
+    login.onclick = function () {
+        alert("Login Successful.");
+    }
+</script>
 </html>
